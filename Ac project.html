@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AC Repair Appointment</title>
+<link rel="stylesheet" type="text/css" href="D:\AC Project\Ac project.css">
+<script type="text/javascript" src="D:\AC Project\Ac project.js"></script>
+</head>
+<body>
+
+<section id="welcome-section";>
+  <h1>Welcome to AC Repair Appointment</h1>
+  <button onclick="showBookingSection()">Book Repair Appointment</button>
+</section>
+
+<section id="booking-section" style="display: none;">
+  <h2>Book AC Repair Appointment</h2>
+  <form action="confirm.html" id="booking-form">
+    <label for="date">Select Date:</label>
+    <input type="date" id="date" name="date" required><br><br>
+    
+    <label for="time">Select Time:</label>
+    <input type="time" id="time" name="time" required><br><br>
+    
+    <label for="location">Select Location:</label>
+    <select id="location" name="location" required>
+      <option value="New York">New York</option>
+      <option value="Los Angeles">Los Angeles</option>
+      <option value="Chicago">Chicago</option>
+      <!-- Add more options as needed -->
+    </select><br><br>
+    
+    <input type="submit" value="Book Appointment">
+  </form>
+</section>
+
+</body>
+</html>
